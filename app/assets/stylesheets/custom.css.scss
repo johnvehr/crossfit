@@ -1,0 +1,129 @@
+/* css for crossfit 704 created by John Vehr */
+
+/* colors */
+$crossfitBlue:#79C4FF;
+/* end colors */
+
+body {
+  margin:0;
+}
+
+header {
+  height:42px;
+  width:900px;
+  margin:0 auto;
+  padding-top:10px;
+}
+
+header nav  {
+  position:relative;
+  bottom:70px;
+  padding-top:7px;
+  left:200px;
+  li {
+  float:left;
+  width:75px;
+  height:21px;
+  border-right:1px solid #EEE;
+  list-style:none;
+  line-height:15px;
+  padding:18px;
+  -webkit-transition:all 0.2s linear;
+    strong {
+    font-size:14px;
+    font-family:sans-serif;
+    color:$crossfitBlue;
+    }
+    span {
+    font-size:14px;
+    font-family:sans-serif;
+    color:gray;
+    font-weight:lighter;
+    }
+  }
+}
+
+header .social-right {
+  float:right;
+  margin-top:-84px;
+  li {
+  float:left;
+  height:27px;
+  padding:12px;
+  padding-top:18px;
+  list-style:none;
+  font-size:14px;
+  font-weight:lighter;
+  font-family:sans-serif;
+  color:$crossfitBlue;
+  span {
+  color:gray;
+  }
+  }
+}
+.social-right li:first-child {
+  border-left:1px solid #EEE;
+  border-right:1px solid #EEE;
+}
+
+header nav ul li strong:hover {
+  color:#229EFF;
+}
+
+/* home page */
+
+.top-image-background {
+  background:url('/assets/new_main_bars.jpg') center no-repeat;
+  height:650px;
+}
+
+.home-container {
+  position:relative;
+  bottom:380px;
+  margin:0 auto;
+  width:900px;
+  height:650px;
+  padding:100px;
+  text-align:center;
+  h1 {
+  font-size:60px;
+  font-family:sans-serif;
+  font-weight:lighter;
+  color:rgba(255,255,255,0.7);
+  span {
+  font-weight:bold;
+  color:rgba(255,255,255,0.7);
+  }
+  }
+  p {
+  color:#EEE;
+  font-family:sans-serif;
+  font-size:18px;
+  font-weight:bolder;
+  margin-bottom:29px;
+  }
+}
+
+.background-overlay {
+  height:400px;
+  width:2200px;
+  position:relative;
+  top:125px;
+  background-color:rgba(0,0,0,0.7);
+}
+
+.text-yourself {
+  margin:0 auto;
+  height:31px;
+  width:189px;
+  background-color:#249EFF;
+  color:rgba(255,255,255,0.8);
+  font-size:25px;
+  font-family:sans-serif;
+  text-align:center;
+  border-radius:6px;
+  text-transform:uppercase;
+  padding:13px;
+}
+
+/* end home begin */
