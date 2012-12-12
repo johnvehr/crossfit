@@ -22,7 +22,7 @@ header nav  {
   left:200px;
   li {
   float:left;
-  width:75px;
+  width:80px;
   height:21px;
   border-right:1px solid #EEE;
   list-style:none;
@@ -79,14 +79,13 @@ header nav ul li strong:hover {
 
 .home-container {
   position:relative;
-  bottom:380px;
+  bottom:270px;
   margin:0 auto;
   width:900px;
   height:650px;
-  padding:100px;
   text-align:center;
   h1 {
-  font-size:60px;
+  font-size:55px;
   font-family:sans-serif;
   font-weight:lighter;
   color:rgba(255,255,255,0.7);
@@ -96,11 +95,12 @@ header nav ul li strong:hover {
   }
   }
   p {
-  color:#EEE;
+  color:#CCC;
   font-family:sans-serif;
   font-size:18px;
   font-weight:bolder;
   margin-bottom:29px;
+  letter-spacing:1px;
   }
 }
 
@@ -114,16 +114,152 @@ header nav ul li strong:hover {
 
 .text-yourself {
   margin:0 auto;
-  height:31px;
-  width:189px;
+  height:21px;
+  width:145px;
   background-color:#249EFF;
   color:rgba(255,255,255,0.8);
-  font-size:25px;
+  font-size:20px;
   font-family:sans-serif;
   text-align:center;
   border-radius:6px;
   text-transform:uppercase;
   padding:13px;
 }
+
+.home-container-two {
+  margin:0 auto;
+  width:900px;
+  height:350px;
+  //background-color:gray;
+  h1 {
+  text-align:center;
+  color:#222;
+  font-family:sans-serif;
+  font-size:55px;
+  font-weight:lighter;
+  }
+  p {
+  text-align:center;
+  font-family:sans-serif;
+  font-size:18px;
+  font-weight:bolder;
+  color:#222;
+  }
+}
+
+.schedule {
+  position:relative;
+  top:21px;
+  background:url('/assets/one.jpg') no-repeat;
+  height:161px;
+  width:200px;
+  box-shadow:0px 1px 9px 0px black;
+  .link-cover {
+  position:relative;
+  top:100px;
+  width:100%;
+  background-color:white;
+  height:57px;
+  padding-top:4px;
+  h2 {
+  text-align:center;
+  font-size:18px;
+  font-weight:lighter;
+  font-family:sans-serif;
+  color:gray;
+  span {
+  font-weight:bolder;
+  }
+  }
+  }
+}
+
+.resources {
+  position:relative;
+  left:240px;
+  bottom:140px;
+  background:url('/assets/two.jpg') no-repeat;
+  height:161px;
+  width:200px;
+  box-shadow:0px 1px 9px 0px black;
+.link-cover-two {
+  position:relative;
+  top:99px;
+  width:100%;
+  background-color:white;
+  height:57px;
+  padding-top:4px;
+  h2 {
+  text-align:center;
+  font-size:18px;
+  font-weight:lighter;
+  font-family:sans-serif;
+  color:gray;
+  span {
+  font-weight:bolder;
+  }
+  }
+  }
+}
+
+.trainers {
+  position:relative;
+  left:477px;
+  bottom:300px;
+  background:url('/assets/willielift.png') no-repeat;
+  height:161px;
+  width:200px;
+  box-shadow:0px 1px 9px 0px black;
+.link-cover-three {
+  position:relative;
+  top:99px;
+  width:100%;
+  background-color:white;
+  height:57px;
+  padding-top:4px;
+  h2 {
+  text-align:center;
+  font-size:18px;
+  font-weight:lighter;
+  font-family:sans-serif;
+  color:gray;
+  span {
+  font-weight:bolder;
+  }
+  }
+  }
+}
+
+.blog {
+  position:relative;
+  left:716px;
+  bottom:462px;
+  background:url('/assets/blog.jpg') no-repeat;
+  height:161px;
+  width:200px;
+  box-shadow:0px 1px 9px 0px black;
+  .link-cover-four {
+  position:relative;
+  top:99px;
+  width:100%;
+  background-color:white;
+  height:57px;
+  padding-top:4px;
+  h2 {
+  text-align:center;
+  font-size:18px;
+  font-weight:lighter;
+  font-family:sans-serif;
+  color:gray;
+  span {
+  font-weight:bolder;
+  }
+  }
+  }
+}
+
+
+
+
 
 /* end home begin */
