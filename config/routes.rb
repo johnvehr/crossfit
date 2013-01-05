@@ -2,17 +2,17 @@ Crossfit::Application.routes.draw do
 
   root :to => "static_pages#home"
 
-  get "static_pages/discover"
+  match "/discover" => "static_pages#discover"
 
-  get "static_pages/start"
+  match "/start" => "static_pages#start"
 
-  get "static_pages/trainers"
+  match "/trainers" => "static_pages#trainers"
+  
+  match "/blog" => "static_pages#blog"  
+  
+  match "/media" => "static_pages#media"
 
-  get "static_pages/blog"
-
-  get "static_pages/media"
-
-  get "static_pages/contact"
+  match "/contact" => "static_pages#contact"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
