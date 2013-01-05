@@ -31,20 +31,23 @@ header nav  {
   bottom:70px;
   padding-top:7px;
   left:144px;
-  li {
+}
+  .embed-rails-li {
   float:left;
   width:80px;
-  height:21px;
+  height:41px;
   border-right:1px solid #EEE;
   list-style:none;
+  text-decoration:none;
   line-height:15px;
-  padding:18px;
+  padding-top:9px;
+  padding-right:20px;
+  margin-bottom:-23px;
+  margin-right:15px;
   -webkit-transition:all 0.2s linear;
-    strong {
     font-size:14px;
     font-family:sans-serif;
     color:$crossfitBlue;
-    }
     span {
     font-size:14px;
     font-family:sans-serif;
@@ -52,9 +55,9 @@ header nav  {
     font-weight:lighter;
     }
   }
-  li:last-child {border-right:0;}
-}
-.address {color:gray;
+  .embed-rails-li:last-child {border-right:0;}
+
+  .address {color:gray;
   font-weight:lighter;
   cursor:pointer;
 }
@@ -83,7 +86,7 @@ header .social-right {
   border-right:1px solid #EEE;
 }
 
-header nav ul li strong:hover {
+header nav ul .embed-rails-li:hover {
   color:#229EFF;
 }
 .journal {
@@ -377,13 +380,15 @@ header nav ul li strong:hover {
 /* trainers begin */
 
 .top-image-trainers {
-  background:url('/assets/trainer-banner.png') center no-repeat;
-  height:400px;
+  background:url('/assets/trainnerbannernew.png') center no-repeat;
+  height:180px;
   width:100%;
   text-align:center;
+  box-shadow:0 1px 3px 3px white;
   h1 {
-    padding-top:150px;
+    padding-top:50px;
     font-family:sans-serif;
+    font-weight:lighter;
     color:$crossfitBlue;
     font-size:4em;
   }
@@ -392,6 +397,65 @@ header nav ul li strong:hover {
 .trainer-container {
   margin:0 auto;
   width:980px;
+  height:500px;
+  padding:50px;
+}
+.trainer-discription strong {
+  font-weight:bolder;
+  font-size:24pt;
+  color:rgba(56,56,56,1);
+}
+.trainer-discription p {
+  position:relative;
+  left:300px;
+  bottom:300px;
+  width:550px;
+  margin-left:20px;
+  color:rgba(71,71,71,1);
+  font-weight:bolder;
+  font-family:sans-serif;
+  font-size:14px;
+}
+.trainer-discription ul {
+  position:relative;
+  bottom:160px;
+  li {
+  float:right;
+  list-style:none;
+  font-family:sans-serif;
+  color:gray;
+  font-weight:bolder;
+  margin-right:30px;
+  }
+}
+
+/* end trainer begin discover */
+
+.discover-background {
+  width:100%;
+  height:900px;
+  background-color:lightgray;
+}
+.discover-crossfit {
+  position:relative;
+  z-index:1;
+  margin:0 auto;
+  width:980px;
+  padding:20px;
+  h1 {
+  margin-top:70px;
+  float:left;
+  font-family:sans-serif;
+  font-size:3em;
+  color:rgba(56,56,56,1);
+  font-weight:bolder;
+  }
+  p {
+  display:inline-block;
+  font-family:sans-serif;
+  font-size:14pt;
+  color:rgba(71,71,71,1);
+  }
 }
 
 /* schedule */
@@ -413,6 +477,34 @@ header nav ul li strong:hover {
   font-family:sans-serif;
   font-size:4em;
   color:$crossfitBlue; 
+  }
+}
+
+/* end schedule begin contact */
+
+.contact-container {
+  margin:0 auto;
+  width:980px;
+  height:300px;
+  text-align:center;
+  h1 {
+  margin-top:170px;
+  font-family:sans-serif;
+  font-size:3em;
+  font-weight:bolder;
+  color:$crossfitBlue;
+  }
+  span {
+  font-family:sans-serif;
+  font-size:1em;
+  color:gray;
+  font-weight:lighter;
+  }
+  h2 {
+  font-family:sans-serif;
+  font-size:2em;
+  font-weight:bolder;
+  color:$crossfitBlue;
   }
 }
 

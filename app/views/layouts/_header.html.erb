@@ -3,16 +3,16 @@
 <%= link_to image_tag('/assets/black_logo_small.png'), root_path %>
 <nav>
 <ul>
-  <li>
-    <strong>Discover</strong>
+  <li class="embed-rails-li">
+    <%= link_to "Discover", discover_path, class: "embed-rails-li" %>
     <span>crossfit</span>
   </li>
-  <li>
-    <strong>Start</strong><br />
+  <li class="embed-rails-li">
+    <%= link_to "Start", start_path, class: "embed-rails-li" %>
     <span>your journey</span>
   </li>
-  <li>
-    <strong>Talk</strong><br />
+  <li class="embed-rails-li">
+    <%= link_to "Talk", contact_path, class: "embed-rails-li" %><br />
     <span>to 704</span>
   </li>
 </ul>
