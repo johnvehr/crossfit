@@ -14,6 +14,8 @@ Crossfit::Application.routes.draw do
 
   match "/contact" => "static_pages#contact"
 
+  match "/programs" => "static_pages#programs"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
