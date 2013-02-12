@@ -1,39 +1,48 @@
 <header>
 <div class="header-container">
+  <div class="header-container-left">
 <%= link_to image_tag('/assets/black_logo_small.png'), root_path %>
-<nav>
-<ul>
-  <li class="embed-rails-li">
-    <%= link_to "Discover", discover_path, class: "embed-rails-li" %>
-    <span>crossfit</span>
-  </li>
-  <li class="embed-rails-li">
-    <%= link_to "Start", start_path, class: "embed-rails-li" %>
-    <span>your journey</span>
-  </li>
-  <li class="embed-rails-li">
-    <%= link_to "Programs", programs_path, class: "embed-rails-li" %><br />
-    <span>and Pricing</span>
-  </li>
-  <li class="embed-rails-li">
-    <%= link_to "Talk", contact_path, class: "embed-rails-li" %><br />
-    <span>to 704</span>
-  </li>
-  
-</ul>
-</nav>
-<div class="social-right">
-  <ul>
-    <li><strong>704<span>.</span>597<span>.</span>9686</strong><br />
-      <span class="address"><strong onclick="toMap()">FIND US</strong></span>
-    </li>
-    <li><a href="http://facebook.com/crossfit704" target="_blank">
-        <img src="/assets/facebook.png" alt="crossfit704 facebook">
-    </a></li>
-    <li><a href="http://youtube.com/crossfit704" target="blank">
-      <img src="/assets/youtube.png" alt="crossfit704 youtube"></a>
-    </li>
-  </ul>
+  </div>
+   <div class="header-container-middle">
+      <div class="left">
+        <div class="btn-group">
+          <button class="btn btn-inverse">Discover</button>
+          <button class="btn btn-inverse dropdown-toggle" data-toggle="dropdown">
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><%= link_to 'What is CrossFit', discover_path %></li>
+            <li><%= link_to 'Programs', programs_path %></li>
+            <li><%= link_to 'Trainers', trainers_path %></li>
+            <li><%= link_to 'Blog', blog_path %></li>
+            <li><%= link_to 'Start', start_path %></li>
+            <li class="divider"></li>
+            <li class="dropdown-submenu">
+              <a tabindex="-1" href="#">Social</a>
+              <ul class="dropdown-menu">
+                <li><a href="http://www.facebook.com/crossfit704" target="_blank">Facebook</a></li>
+                <li><a href="http://www.youtube.com/crossfit704" target="_blank">YouTube</a></li>
+              </ul>
+            <li/>
+          </ul>
+        </div>
+      </div>
+    <!--
+      <div class="right">
+      <ul class="header-container-nav">
+        <li><%= link_to 'Talk', contact_path %></li>
+      </ul>
+    </div> -->
+  </div>
+  <div class="header-nav-container-main">
+    <div class="header-container-right">
+      <span>704-597-9686 | <span class="map" onclick="toMap()">Find Us</span></span> 
+  </div>
 </div>
 </div>
 </header>
+<script>
+  $(function() {
+    $('#example').popover();
+  });
+</script>
