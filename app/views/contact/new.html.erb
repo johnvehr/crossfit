@@ -1,0 +1,48 @@
+<div class="contact-background">
+  <div class="contact-form-background">
+    <div class="contact-form">
+      <div class="contact-form-left">
+        <h1>We promise you'll fit in</h1>
+        <p>
+          Crossfit is not just about testing yourself physically. We are a community of fun and amazing people who care just as much about the person next to them as ourselves.  Anyone can do it, if you're a kid, grandma, grandpa, or athlete.  We'll personally evaluate where you are and start you off on the right foot!
+        </p>
+      </div>
+      <div class="contact-form-field">
+  <%= form_for @message, :url => contact_path do |form| %>
+  <fieldset class="form-horizontal">
+    <div class="control-group">
+      <%= form.label :name, class: 'control-label' %>
+      <div class="controls">
+      <%= form.text_field :name, placeholder: 'Name' %>
+      </div>
+    </div>
+    
+    <div class="control-group">
+      <%= form.label :email, class: 'control-label' %>
+      <div class="controls">
+      <%= form.text_field :email, placeholder: 'Email' %>
+      </div>
+    </div>
+    <div class="control-group">
+      <%= form.label :subject, class: 'control-label' %>
+      <div class="controls">
+      <%= form.text_field :subject, placeholder: 'Subject' %>
+      </div>
+    </div>
+    
+    <div class="control-group">
+      <%= form.label :body, class: 'control-label' %>
+      <div class="controls">
+        <%= form.text_area :body, placeholder: 'Message', rows: 5, cols:40 %>
+      </div>
+    </div>
+  </fieldset>
+  
+  <fieldset class="actions">
+    <%= form.submit "Send", class: 'button-contact' %>
+  </fieldset>
+<% end %>
+</div>
+</div>
+</div>
+</div>

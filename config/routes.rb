@@ -12,9 +12,11 @@ Crossfit::Application.routes.draw do
   
   match "/media" => "static_pages#media"
 
-  match "/contact" => "static_pages#contact"
 
   match "/programs" => "static_pages#programs"
+
+ match '/contact' => 'contact#new', :as => 'contact', :via => :get
+match '/contact' => 'contact#create', :as => 'contact', :via => :post 
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

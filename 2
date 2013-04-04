@@ -1,57 +1,28 @@
-<!-- home page -->
-<div class="top-image-background">
-  <div class="background-overlay">
-  </div>
-  <div class="home-container">
-    <h1>Change<span> your life</span> by changing<br /> how <span>you move</span></h1>
-    <p>
-      CrossFit is a functional fitness program. Every day, you bend down and pick things up, carry things, put things over your head, sit down and stand back up, or run after your kids.  CrossFit prepares you for the real world by performing these same movements in our workouts.
-    </p>
-    <div class="text-yourself">
-    Free Class
+<div class="contact-form">
+<%= form_for @message, :url => contact_path do |form| %>
+  <fieldset class="fields">
+    <div class="field">
+      <%= form.label :name %>
+      <%= form.text_field :name %>
     </div>
-  </div>
+    
+    <div class="field">
+      <%= form.label :email %>
+      <%= form.text_field :email %>
+    </div>
+    <div class="field">
+      <%= form.label :subject %>
+      <%= form.text_field :subject %>
+    </div>
+    
+    <div class="field">
+      <%= form.label :body %>
+      <%= form.text_area :body %>
+    </div>
+  </fieldset>
+  
+  <fieldset class="actions">
+    <%= form.submit "Send" %>
+  </fieldset>
+<% end %>
 </div>
-<div class="home-container-two">
-  <h1>Get more involved..</h1>
-  <div class="schedule">
-    <div class="link-cover">
-      <h2>Get the <span>schedule</span></h2>
-    </div>
-  </div>
-  <div class="resources">
-    <div class="link-cover-two">
-      <h2>Get the <span>resources</span></h2>
-    </div>
-  </div>
-  <div class="trainers">
-    <div class="link-cover-three">
-      <h2>Meet the <span>trainers</span></h2>
-    </div>
-  </div>
-  <div class="blog">
-    <div class="link-cover-four">
-      <h2>Follow the <span>blog</span></h2>
-    </div>
-  </div>
-</div>
-<div class="home-container-three">
-  <div class="home-container-three-inside">
-    <h1>The Box..</h1>
-    <p>
-      Fully equiped with everything you need to test yourself to the limits.  Stacked with <br /><span>Rogue</span> equipment, ropes, rings and speakers to jam!   
-    </p>
-    <div class="media-button">
-      MEDIA
-    </div>
-  </div>
-</div>
-<div class="home-container-four">
-  <div class="home-container-four-inside">
-    <h1>We promise <span>you'll fit right in</span>..</h1>
-    <hr class="blue">
-    <p>CrossFit is not just about testing yourself physically.  We are a community of fun and amazing people who care just as much about the person next to them as ourselves.  Anyone can do it, if you're a kid, grandma, grandpa or athlete.  We'll personally evaluate where you are and start you off on the right foot!</p>
-  </div>
-</div>
-
-

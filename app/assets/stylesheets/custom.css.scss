@@ -1,563 +1,350 @@
-/* css for crossfit 704 created by John Vehr */
-
-/* colors */
-$crossfitBlue:#79C4FF;
-/* end colors */
-
-/* countdown */
-
-
-/* end countdown */
+@import 'bootstrap';
 
 body {
-  margin:0;
+  padding-top:45px;
 }
 
 header {
   position:fixed;
   top:0;
   width:100%;
-  height:45px;
-  background-color:white;
+  height:40px;
   padding-top:10px;
+  background-color:#fff;
   z-index:999;
-  box-shadow:0 1px 8px 2px rgba(138,138,138,1);
+    -webkit-box-shadow: 0 8px 6px -6px black;
+       -moz-box-shadow: 0 8px 6px -6px black;
+	    box-shadow: 0 8px 6px -6px black;
 }
 
-header .header-container {
+.header-container {
   margin:0 auto;
   width:900px;
-  height:42px;
+  height:100%;
+}
+
+.header-left {
+  float:left;
+  width:180px;
+  height:100%;
+}
+
+.header-left img {
+  float:left;
+}
+
+.header-middle-wrapper {
+  float:left;
+  width:325px;
   padding-top:5px;
-}.header-container-left{
+}
+
+.header-middle {
   float:left;
-  height:27px;
-  width:184px;
-  border-right:2px solid lightgray;
-  margin-right:35px;
-}.header-container-middle{
+  width:325px;
+  height:20px;
+  border-left:2px solid rgba(0,0,0,0.5);
+}
+
+.header-middle ul {
   float:left;
-  height:100%;
-  margin-top:-2px;
-}.header-container-nav li{
+}
+
+.header-middle ul li {
   float:left;
-  margin-right:20px;
+  margin-right:15px;
   list-style:none;
-  font-family:sans-serif;
-  font-size:18px;
-  color:$crossfitBlue;
-}.header-container-nav li a:hover{
-  text-decoration:none;
-  width:100%;
-}.header-container-right{
-  float:right;
-  padding-top:2px;
-  a:first-child {
-  margin-right:10px;
-  }
-  span{
-  color:gray;
-  font-family:sans-serif;
-  font-size:14px;
-  }.map {
-  text-decoration:underline;
-  }
-  .map:hover{
-  color:$crossfitBlue;
-  cursor:pointer;
-  } 
-}.header-nav-container-main{
-  height:100%;
-  width:300px;
-  float:right;
-}#drop1:hover {
-  cursor:pointer;
-}.journal {
- position:relative;
- top:70px;
- right:70px;
- margin:0;
+  color:rgba(58,58,58,1); 
 }
-.dropdown {
-  font-size:18px;
-}.left{
+
+.header-middle ul li a {
+  color:rgba(58,58,58,1);
+   -webkit-transition:all 0.2s linear;
+  &:hover {
+  color:gray;
+  text-decoration:none;
+  }
+}
+
+.header-right {
+  float:right;
+  margin-top:-7px;
+}
+
+.header-right ul {
+  float:right;
+}
+
+.header-right ul li {
   float:left;
-}.right{
-  float:right;
-}
-/* home page */
-
-.top-image-background {
-  background:url('/assets/new_main_bars.jpg') center no-repeat;
-  height:650px;
-  margin-top:55px;
+  list-style:none;
+  margin-left:15px;
 }
 
-.home-container {
-  position:relative;
-  bottom:245px;
-  margin:0 auto;
-  width:900px;
-  height:650px;
-  text-align:center;
-  h1 {
-  font-size:45px;
-  font-family:sans-serif;
-  font-weight:lighter;
-  color:rgba(255,255,255,0.6);
-  margin-bottom:18px;
-  line-height:62px;
-  span {
-  font-weight:bold;
-  color:rgba(255,255,255,0.7);
-  }
-  }
-  p {
-  color:#CCC;
-  font-family:sans-serif;
-  font-size:17px;
-  font-weight:bolder;
-  margin-bottom:60px;
-  letter-spacing:1px;
-  }
-}
+/* ending header and begin home page */
 
-.background-overlay {
-  height:400px;
+.home-image {
   width:100%;
-  position:relative;
-  top:125px;
-  background-color:rgba(0,0,0,0.7);
+  height:500px;
+  background:url('/assets/good-to-go.png') center no-repeat;
 }
 
-.text-yourself {
+.home-image-inner-container {
+  width:100%;
+  height:500px;
+  background:rgba(0,0,0,0.7);
+}
+
+.home-image-inner {
   margin:0 auto;
-  height:19px;
-  width:145px;
-  background-color:#249EFF;
-  color:rgba(255,255,255,0.8);
-  font-size:20px;
-  font-family:sans-serif;
+  width:885px;
   text-align:center;
-  border-radius:6px;
+  padding-top:90px
+}
+
+.home-image-inner h1 {
   text-transform:uppercase;
-  padding:15px;
-}.text-yourself:hover{
+  color:#fff;
+  font-size:40px;
+  font-weight:500;
+  font-family:sans-serif;
+  letter-spacing:3px;
+  line-height:63px;
+  margin-bottom:20px;
+}
+
+.home-image-inner p {
+  color:#fff;
+  font-family:sans-serif;
+  font-weight:bolder;
+}
+
+.button-container {
+  margin:0 auto;
+  width:200px;
+  height:100px;
+  padding-top:40px
+}
+
+.button {
+  display:inline-block;
+  padding:14px 27px 14px 29px;
+  color:#222;
+  white-space:nowrap;
+  border-radius:50px;
+  text-align:center;
+  cursor:pointer;
+  background:#fff;
+  font-weight:500;
+  line-height:14px;
+  letter-spacing:1px;
+  text-transform:uppercase;
+  &:hover {
   text-decoration:none;
-  color:white;
-  text-shadow:3px 1px 8px black;
-}
-.home-container-two {
-  margin:0 auto;
-  width:900px;
-  height:470px;
-  //background-color:gray;
-  h1 {
-  margin-top:100px;
-  text-align:center;
-  color:#222;
-  font-family:sans-serif;
-  font-size:55px;
-  font-weight:lighter;
-  }
-  p {
-  text-align:center;
-  font-family:sans-serif;
-  font-size:18px;
-  font-weight:bolder;
-  color:#222;
-  }
-}
-
-.schedule {
-  position:relative;
-  top:21px;
-  background:url('/assets/one.jpg') no-repeat;
-  height:161px;
-  width:200px;
-  box-shadow:0px 1px 9px 0px black;
-  .link-cover {
-  position:relative;
-  top:100px;
-  width:100%;
-  background-color:white;
-  height:57px;
-  padding-top:4px;
-  h2 {
-  text-align:center;
-  font-size:18px;
-  font-weight:lighter;
-  font-family:sans-serif;
   color:gray;
-  span {
-  font-weight:bolder;
-  }
-  }
   }
 }
 
-.resources {
-  position:relative;
-  left:240px;
-  bottom:140px;
-  background:url('/assets/two.jpg') no-repeat;
-  height:161px;
-  width:200px;
-  box-shadow:0px 1px 9px 0px black;
-.link-cover-two {
-  position:relative;
-  top:99px;
+.crossfit-defined-banner {
   width:100%;
-  background-color:white;
-  height:57px;
-  padding-top:4px;
-  h2 {
+  height:37px;
+  padding-top:21px;
+  background:#fff;
+  border-bottom:1px solid #ddd;
+  display:block;
   text-align:center;
-  font-size:18px;
-  font-weight:lighter;
+}
+
+.crossfit-defined-banner p {
+  font-weight:500px;
   font-family:sans-serif;
-  color:gray;
-  span {
-  font-weight:bolder;
-  }
-  }
-  }
-}
-
-.trainers {
-  position:relative;
-  left:477px;
-  bottom:300px;
-  background:url('/assets/willielift.png') no-repeat;
-  height:161px;
-  width:200px;
-  box-shadow:0px 1px 9px 0px black;
-.link-cover-three {
-  position:relative;
-  top:99px;
-  width:100%;
-  background-color:white;
-  height:57px;
-  padding-top:4px;
-  h2 {
-  text-align:center;
-  font-size:18px;
-  font-weight:lighter;
-  font-family:sans-serif;
-  color:gray;
-  span {
-  font-weight:bolder;
-  }
-  }
-  }
-}
-
-.blog {
-  position:relative;
-  left:716px;
-  bottom:462px;
-  background:url('/assets/blog.jpg') no-repeat;
-  height:161px;
-  width:200px;
-  box-shadow:0px 1px 9px 0px black;
-  .link-cover-four {
-  position:relative;
-  top:99px;
-  width:100%;
-  background-color:white;
-  height:57px;
-  padding-top:4px;
-  h2 {
-  text-align:center;
-  font-size:18px;
-  font-weight:lighter;
-  font-family:sans-serif;
-  color:gray;
-  span {
-  font-weight:bolder;
-  }
-  }
-  }
-}
-
-.home-container-three {
-  width:100%;
-  height:470px;
-  background-color:#EEE;
-}
-
-.home-container-three-inside {
-  width:900px;
-  margin:0 auto;
-  height:300px;
-  padding-top:100px;
-  h1 {
-   text-align:center;
-   font-family:sans-serif;
-   font-size:55px;
-   color:#EEE;
-   font-weight:lighter;
-   span {
-   font-weight:bold;
-   }
-  }
-  p {
-  color:#EEE;
-  text-align:center;
-  font-family:sans-serif;
-  font-size:18px;
-  letter-spacing:1px;
-  span {
-  color:#E66A6A;
-  font-size:19px;
-  font-weight:bolder;
-  }
-  }
-}
-
-.media-button {
-  margin:0 auto;
-  height:21px;
-  width:145px;
-  background-color:#249EFF;
-  color:rgba(255,255,255,0.8);
   font-size:20px;
-  font-family:sans-serif;
-  text-align:center;
-  border-radius:6px;
-  text-transform:uppercase;
-  padding:13px;
-
-}
-
-.home-container-four {
-  width:100%;
-  height:450px;
-  background-color:#222;
-}
-
-.home-container-four-inside {
-  margin:0 auto;
-  width:900px;
-  height:450px;
-  padding-top:50px;
-  h1 {
-  margin-top:70px;
-  text-align:center;
-  color:#EEE;
-  font-size:55px;
-  font-family:sans-serif;
-  font-weight:lighter;
-  span {
-  font-weight:bolder;
-  }
-  }
-  p {
-  text-align:center;
   letter-spacing:1px;
-  font-size:18px;
-  font-family:sans-serif;
-  font-weight:bold;
-  color:#EEE;
-  }
+  color:#333;
+  text-transform:uppercase;
 }
 
-.blue {
-    border: 0;
-    height: 1px;
-    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), $crossfitBlue, rgba(0,0,0,0)); 
-    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
-    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
-    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
-}
-/* end home begin */
-
-/* trainers begin */
-
-.top-image-trainers {
-  background:url('/assets/trainnerbannernew.png') center no-repeat;
-  height:180px;
+.crossfit-defined {
   width:100%;
-  text-align:center;
-  box-shadow:0 1px 3px 3px white;
-  h1 {
-    padding-top:50px;
-    font-family:sans-serif;
-    font-weight:lighter;
-    color:$crossfitBlue;
-    font-size:4em;
-  }
+  height:375px;
+  padding-top:52px;
+  background:#f5f5f5;
 }
+
+.crossfit-defined-container {
+  margin: 0 auto;
+  height:315px;
+  width:560px;
+}
+
+/* end home page begin trainer page */
 
 .trainer-container {
   margin:0 auto;
-  width:980px;
-  height:530px;
-  padding:50px;
-  margin-top:120px;
+  width:900px;
+  height:550px;
+  padding-top:100px;
+
 }
-.trainer-discription strong {
-  font-weight:bolder;
-  font-size:24pt;
-  color:rgba(56,56,56,1);
-}
-.trainer-discription p {
-  position:relative;
-  left:300px;
-  bottom:300px;
-  width:550px;
-  margin-left:20px;
-  color:rgba(71,71,71,1);
-  font-weight:bolder;
-  font-family:sans-serif;
-  font-size:14px;
-}
-.trainer-discription ul {
-  position:relative;
-  bottom:180px;
-  display:inline-block;
-  li {
+
+.trainer-images {
   float:right;
-  list-style:none;
-  font-family:sans-serif;
-  color:gray;
-  font-weight:bolder;
-  margin-right:30px;
-  }
+  height:440px;
+  width:210px;
 }
 
-/* end trainer begin discover */
-
-.discover-background {
-  width:100%;
-  height:750px;
-  background-color:lightgray;
-}
-.discover-crossfit {
-  position:relative;
-  z-index:1;
-  margin:0 auto;
-  width:900px;
-  padding:20px;
-  h1 {
-  margin-top:70px;
-  float:left;
-  font-family:sans-serif;
-  font-size:3em;
-  color:rgba(56,56,56,1);
-  font-weight:bolder;
-  }
-}.crossfit-video {
-  width:560px;
-  margin:0 auto;
-  margin-top:130px;
-}.get-started {
-  margin:0 auto;
-  padding-top:50px;
-  width:900px;
-  height:200px;
-  text-align:center
-}
-
-/* schedule */
-
-.schedule-page-background {
-  background-color:gray;
-  width:100%;
-  height:220px;
-}
-.schedule-page-top {
-  position:relative;
-  top:0;
-  z-index:1;
-  margin:0 auto;
-  width:900px;
-  text-align:center;
-  margin-top:-145px;
-  h1 {
-  font-family:sans-serif;
-  font-size:4em;
-  color:$crossfitBlue; 
-  }
-}
-/* end schedule */
-/* begin contact */
-
-.contact-container {
-  margin:0 auto;
-  width:980px;
-  height:300px;
-  text-align:center;
-  h1 {
-  margin-top:170px;
-  font-family:sans-serif;
-  font-size:3em;
-  font-weight:bolder;
-  color:$crossfitBlue;
-  }
-  span {
-  font-family:sans-serif;
-  font-size:1em;
-  color:gray;
-  font-weight:lighter;
-  }
-  h2 {
-  font-family:sans-serif;
-  font-size:2em;
-  font-weight:bolder;
-  color:$crossfitBlue;
-  }
-}
-
-/* programs and pricing */
-
-.programs-background {
-  width:100%;
-  height:800px;
-  background-color:lightgray;
-  text-align:center;
-}
-.programs-container {
-  margin:0 auto;
-  width:980px;
-  text-align:center;
-}
-/* end programs and pricing */
-
-/* footer */
-
-footer {
-  background-color:#222;
-  height:400px;
-  width:100%;
-  height:100%;
-}
-
-.footer-inside {
-  margin:0 auto;
-  padding-top:23px;
-  width:900px;
-  p {
-  color:white;
-  font-family:sans-serif;
-  font-size:18px;
-  }
-}
-.footer-inside address {
-  position:relative;
-  color:white;
-  font-family:sans-serif;
-  font-weight:lighter;
-  font-size:20px;
-}
-.logo {
-  position:relative;
+.trainer-images img:first-child {
   margin-bottom:20px;
 }
-.directions {
-  position:relative;
-  left:430px;
-  bottom:230px;
-}.crossfit-link{
-  margin-top:-50px;
+
+.trainer-description {
+  float:left;
+  width:600px;
+}
+
+.trainer-description h2 {
+  float:left;
+}
+
+.trainer-description p {
+  float:left;
+}
+
+.trainer-description ul {
+  float:left;
+}
+
+.trainer-description ul li {
+  font-weight:bolder;
+}
+
+/* end trainers begin programs */
+
+.programs-background {
+  margin:0 auto;
+  width:900px;
+  height:700px;
+  padding-top:50px;
+}
+
+
+
+/* end programs page begin schedule */
+
+.schedule-page-top {
+  margin:0 auto;
+  width:900px;
+  height:50px;
+  padding-top:20px;
+  text-align:center;
+}
+
+/* end schedule begin contact */
+
+.contact-background {
+  background:url("/assets/back-slide3.jpg") center no-repeat;
+  width:100%;
+  height:700px;
+}
+
+.contact-form-background {
+  width:100%;
+  height:700px;
+  background:rgba(0,0,0,0.7);
+}
+
+.contact-form {
+  margin:0 auto;
+  width:900px;
+  height:700px;
+}
+
+.contact-form-left {
+  float:left;
+  padding-top:145px;
+}
+
+.contact-form-left {
+  text-align:center;
+  width:500px;
+  color:rgba(255,255,255,0.7);
+}
+
+.contact-form-left p {
+  float:left;
+  color:#fff;
+}
+
+.contact-form-field {
+  float:right;
+  padding-top:130px;
+}
+
+.button-contact {
+  float:right;
+  display:inline-block;
+  padding:14px 27px 14px 29px;
+  color:#222;
+  white-space:nowrap;
+  border-radius:50px;
+  text-align:center;
+  cursor:pointer;
+  background:#fff;
+  font-weight:500;
+  line-height:14px;
+  letter-spacing:1px;
+  text-transform:uppercase;
+  &:hover {
+  text-decoration:none;
+  color:gray;
+  }
+}
+
+.control-label {
+  color:#fff;
+}
+
+/* begin footer */
+
+footer {
+  display:inline-block;
+  width:100%;
+  height:300px;
+  background:#222;
+}
+
+.footer-container {
+  margin:0 auto;
+  padding-top:20px;
+  width:900px;
+}
+
+.footer-container iframe {
+  float:right;
+}
+
+.logo-address {
+  float:left;
+  width:350px;
+}
+
+.logo-address img {
+  float:left;
+  margin-bottom:15px;
+}
+
+.logo-address address {
+  float:left;
+  color:#fff;
+  margin-bottom:15px;
+}
+
+.logo-address p {
+  float:left;
+  color:#fff;
+}
+
+.logo-address p span {
+  font-weight:bolder;
+  color:#ccc;
 }

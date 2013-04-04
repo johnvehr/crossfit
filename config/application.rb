@@ -11,7 +11,20 @@ end
 
 module Crossfit
   class Application < Rails::Application
-    # Settings in config/environments/* take precedence over those specified here.
+
+   config.action_mailer.smtp_settings = {
+  :address              => "smtp.gmail.com",
+  :port                 => 587,
+  :domain               => "crossfit704.com",
+  :user_name            => "will@crossfit704.com",
+  :password             => "Deftones1",
+  :authentication       => :plain,
+  :enable_starttls_auto => true
+}
+
+config.action_mailer.default_url_options = {
+  :host => "crossfit704.com"
+}    # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
 

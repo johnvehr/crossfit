@@ -1,60 +1,19 @@
-<!-- home page -->
-<div class="top-image-background">
-  <div class="background-overlay">
-  </div>
-  <div class="home-container">
-    <h1>Change<span> your life</span> by changing<br /> how <span>you move</span></h1>
-    <p>
-      CrossFit is a functional fitness program. Every day, you bend down and pick things up, carry things, put things over your head, sit down and stand back up, or run after your kids.  CrossFit prepares you for the real world by performing these same movements in our workouts.
-    </p>
-    <%= link_to 'Free Class', start_path, :class => 'text-yourself' %>
-  </div>
-</div>
-<div class="home-container-two">
-  <h1>Get more involved..</h1>
-  <hr class="blue" />
-  <div class="schedule" onclick="location.href='http://salty-inlet-7845.herokuapp.com/start';" >
-    <div class="link-cover">
-      <h2>Get the <span>schedule</span></h2>
-    </div>
-  </div>
-  <div class="resources">
-    <div class="link-cover-two">
-      <h2>Get the <span>resources</span></h2>
-    </div>
-  </div>
-  <div class="trainers" onclick="location.href='http://salty-inlet-7845.herokuapp.com/trainers';">
-    <div class="link-cover-three">
-      <h2>Meet the <span>trainers</span></h2>
-    </div>
-  </div>
-  <div class="blog">
-    <div class="link-cover-four">
-      <h2>Follow the <span>blog</span></h2>
+<div class="home-image">
+  <div class="home-image-inner-container">
+  <div class="home-image-inner">
+    <h1>Change your life by changing how you move</h1>
+    <p>Crossfit is a functional fitness program.  Every day, you bend down and pick things up, carry things, put things over your head, sit down and stand up, or run after your kids. Crossfit prepares you for the real work by performing these same movements in our workouts.</p>
+    <div class="button-container">
+      <%= link_to "Free Class", start_path, class: 'button' %>
     </div>
   </div>
 </div>
-<div class="home-container-three">
-  <div class="home-container-three-inside">
-    <div class="flexslider">
-      <ul class="slides">
-        <li><img src="/assets/image1.png"></li>
-        <li><img src="/assets/image2.png"></li>
-        <li><img src="/assets/image3.png"></li>
-      </ul>
-    </div>
+</div>
+<div class="crossfit-defined-banner">
+  <p><strong>Crossfit</strong> Defined</p>
+</div>
+<div class="crossfit-defined">
+  <div class="crossfit-defined-container">
+    <iframe width="560" height="315" src="http://www.youtube.com/embed/ZZdp59yyG0M" frameborder="0" allowfullscreen></iframe> 
   </div>
 </div>
-<div class="home-container-four">
-  <div class="home-container-four-inside">
-    <h1>We promise <span>you'll fit right in</span>..</h1>
-    <hr class="blue" />
-    <p>CrossFit is not just about testing yourself physically.  We are a community of fun and amazing people who care just as much about the person next to them as ourselves.  Anyone can do it, if you're a kid, grandma, grandpa or athlete.  We'll personally evaluate where you are and start you off on the right foot!</p>
-  </div>
-</div>
-
-<script type="text/javascript" charset="utf-8">
-  $(window).load(function() {
-    $('.flexslider').flexslider();
-  });
-</script>
