@@ -41,7 +41,7 @@ header {
 
 .header-middle {
   float:left;
-  width:325px;
+  width:375px;
   height:20px;
   border-left:2px solid rgba(0,0,0,0.5);
 }
@@ -223,10 +223,13 @@ header {
 .programs-background {
   margin:0 auto;
   width:900px;
-  height:700px;
+  height:1400px;
   padding-top:50px;
 }
 
+.info {
+  background:rgba(105,195,255,1);
+}
 
 
 /* end programs page begin schedule */
