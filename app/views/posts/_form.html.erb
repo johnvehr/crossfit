@@ -1,0 +1,40 @@
+<%= form_for(@post) do |f| %>
+  <% if @post.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@post.errors.count, "error") %> prohibited this post from being saved:</h2>
+
+      <ul>
+      <% @post.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <fieldset class="form-horizontal">
+
+  <div class="control-group">
+    <%= f.label :title, class: 'control-label black' %>
+    <div class="controls">
+      <%= f.text_field :title, placeholder: 'Wod title' %>
+    </div>
+  </div>
+
+  <div class="control-group">
+    <%= f.label :content, class: 'control-label black' %>
+    <div class="controls">
+      <%= f.text_area :content, placeholder: 'Wod details', rows:5, cols:60 %>
+    </div>
+  </div>
+
+  <div class="control-group">
+    <%= f.label :Wod, class: 'control-label black' %>
+    <div class="controls">
+      <%= f.text_area :wod, placeholder: 'Trainer notes', rows:5, cols:60 %>
+    </div>
+  </div>
+
+</fieldset>
+<fieldset class="actions btn-right">
+    <%= f.submit "Post", class: 'btn btn-success' %>
+  </fieldset>
+  <% end %>

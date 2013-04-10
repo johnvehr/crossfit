@@ -1,5 +1,10 @@
 Crossfit::Application.routes.draw do
 
+  resources :posts
+
+
+  get "home/index"
+
   root :to => "static_pages#home"
 
   match "/discover" => "static_pages#discover"
@@ -8,7 +13,7 @@ Crossfit::Application.routes.draw do
 
   match "/trainers" => "static_pages#trainers"
   
-  match "/blog" => "static_pages#blog"  
+  match "/wod" => "posts#index"  
   
   match "/media" => "static_pages#media"
 

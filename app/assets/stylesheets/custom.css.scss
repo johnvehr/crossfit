@@ -41,7 +41,7 @@ header {
 
 .header-middle {
   float:left;
-  width:375px;
+  width:445px;
   height:20px;
   border-left:2px solid rgba(0,0,0,0.5);
 }
@@ -305,6 +305,82 @@ header {
 
 .control-label {
   color:#fff;
+}
+
+/* wods */
+.wod-container {
+  margin:0 auto;
+  padding-top:50px;
+  width:900px;
+  height:600px;
+}
+
+.wod-container h1 {
+  margin-bottom:40px;  
+}
+
+.black {
+  color:black;
+  font-weight:bolder;
+}
+
+.wod-display-container {
+  margin: 0 auto;
+  padding-top:25px;
+  width:900px;
+  height:600px;
+}
+
+.status {
+  border-bottom:1px solid gray;
+  padding:15px 0;
+}
+
+.status p {
+  margin:5px 0;
+}
+
+.status.hover {
+  background:#FAFAFA;
+}
+
+.status .admin {
+  display:none;
+}
+
+.status.hover .admin {
+  display:inline;
+}
+
+.btn-right {
+  width:100px;
+  float:left;
+  margin-left:345px;
+}
+
+.time-link {
+  color:#69c3ff;
+  font-size:18px;
+}
+
+.wod-show-container {
+  margin:0 auto;
+  width:900px;
+  height:600px;
+}
+
+.wod-show-container-inner {
+  margin:0 auto;
+  width:800px;
+  height:100%;
+}
+
+.wod-no-good {
+  padding-top:40px;
+}
+
+.wod-no-good h2 {
+  color:#69c3ff;
 }
 
 /* begin footer */
