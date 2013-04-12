@@ -6,13 +6,14 @@
 </div>
 <% @posts.each do |post| %>
   <div class="status">
-    <%= link_to "Posted " + time_ago_in_words(post.created_at) + " ago", post, class: 'time-link' %>
+    <h2><%= time_tag(post.created_at.to_date) %></h2> 
     <h5><%= post.title %></h5>
     <p><%= post.content %></p>
     <div class="meta">
+      <%= link_to "Posted " + time_ago_in_words(post.created_at) + " ago", post, class: 'time-link' %>
       <span>
         <%= link_to "Trainer Notes", post, class: 'btn btn-success' %> 
-      </span>
+      </span> 
     </div>
 </div>
 <% end %>
