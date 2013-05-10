@@ -182,9 +182,12 @@ header {
 .trainer-container {
   margin:0 auto;
   width:900px;
-  height:550px;
-  padding-top:100px;
+  height:450px;
+  padding-top:80px;
+}
 
+.trainer-description h1 span {
+  font-weight:lighter;
 }
 
 .trainer-images {
@@ -196,6 +199,11 @@ header {
 .trainer-images img:first-child {
   margin-bottom:20px;
 }
+
+.trainer-one-image {
+  padding-top: 65px;
+}
+
 
 .trainer-description {
   float:left;
@@ -425,4 +433,10 @@ footer {
 .logo-address p span {
   font-weight:bolder;
   color:#ccc;
+}
+
+hr.style-trainer {
+    border: 0;
+    border-bottom: 1px dashed #ccc;
+    background: #999;
 }

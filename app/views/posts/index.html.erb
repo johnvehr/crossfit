@@ -9,6 +9,7 @@
     <h2><%= time_tag(post.created_at.to_date) %></h2> 
     <h5><%= post.title %></h5>
     <p><%= post.content %></p>
+    <% image_tag(post.picture_url, :width => 300)if post.picture.present? %>
     <div class="meta">
       <%= link_to "Posted " + time_ago_in_words(post.created_at) + " ago", post, class: 'time-link' %>
       <span>
