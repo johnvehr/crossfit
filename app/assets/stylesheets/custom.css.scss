@@ -3,89 +3,33 @@
 body {
   padding-top:45px;
 }
-
-header {
-  position:fixed;
-  top:0;
-  width:100%;
-  height:40px;
-  padding-top:10px;
-  background-color:#fff;
-  z-index:999;
-    -webkit-box-shadow: 0 8px 6px -6px black;
-       -moz-box-shadow: 0 8px 6px -6px black;
-	    box-shadow: 0 8px 6px -6px black;
+.navbar {
+  background:#FFF;
+  border-bottom:2px solid gray;
 }
-
-.header-container {
-  margin:0 auto;
-  width:900px;
-  height:100%;
+.logo img {
+  margin-top:8px;
+  opacity:0.5;
+}.logo img:hover {
+  opacity:1;
 }
-
-.header-left {
-  float:left;
-  width:180px;
-  height:100%;
+.navbar .nav > li > a:hover {
+  background:#69c3ff;
+  color:#FFF;
+  text-shadow:none;
 }
-
-.header-left img {
-  float:left;
+.container > ul > li {
+  display:inline;
+}.container > ul > li > a > img {
+  width:30px;
+  height:30px;
 }
-
-.header-middle-wrapper {
-  float:left;
-  width:325px;
-  padding-top:5px;
-}
-
-.header-middle {
-  float:left;
-  width:445px;
-  height:20px;
-  border-left:2px solid rgba(0,0,0,0.5);
-}
-
-.header-middle ul {
-  float:left;
-}
-
-.header-middle ul li {
-  float:left;
-  margin-right:15px;
-  list-style:none;
-  color:rgba(58,58,58,1); 
-}
-
-.header-middle ul li a {
-  color:rgba(58,58,58,1);
-   -webkit-transition:all 0.2s linear;
-  &:hover {
-  color:gray;
-  text-decoration:none;
-  }
-}
-
-.header-right {
-  float:right;
-  margin-top:-7px;
-}
-
-.header-right ul {
-  float:right;
-}
-
-.header-right ul li {
-  float:left;
-  list-style:none;
-  margin-left:15px;
-}
-
 /* ending header and begin home page */
 
 .home-image {
   width:100%;
   height:500px;
+  margin-top:-5px;
   background:url('/assets/good-to-go.png') center no-repeat;
 }
 
@@ -115,8 +59,9 @@ header {
 
 .home-image-inner p {
   color:#fff;
+  font-size:16px;
   font-family:sans-serif;
-  font-weight:bolder;
+  letter-spacing:1px;
 }
 
 .button-container {
@@ -129,19 +74,19 @@ header {
 .button {
   display:inline-block;
   padding:14px 27px 14px 29px;
-  color:#222;
+  color:#FFF;
   white-space:nowrap;
-  border-radius:50px;
+  border:2px solid #FFF;
   text-align:center;
   cursor:pointer;
-  background:#fff;
   font-weight:500;
   line-height:14px;
   letter-spacing:1px;
   text-transform:uppercase;
   &:hover {
   text-decoration:none;
-  color:gray;
+  background:#FFF;
+  color:black;
   }
 }
 
@@ -231,12 +176,18 @@ header {
 .programs-background {
   margin:0 auto;
   width:900px;
-  height:1400px;
+  height:1800px;
   padding-top:50px;
 }
 
 .info {
   background:rgba(105,195,255,1);
+}
+
+.session-one {
+  padding-left:180px;
+}.session-two {
+  padding-left:187px;
 }
 
 

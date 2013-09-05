@@ -1,27 +1,11 @@
-<header>
-<div class="header-container">
-  <div class="header-left">
-    <%= link_to image_tag('/assets/logo-black-small.png'), root_path %>
+  <div class="navbar navbar-fixed-top">
+    <div class="container">
+        <%= link_to image_tag('/assets/logo-black-small.png'), root_path, class: 'logo' %>
+ 
+        <ul class="nav pull-right">
+          <li><%= link_to 'Programs & Pricing', programs_path %></li>
+          <li><%= link_to 'Trainsers', trainers_path %></li>
+          <li><%= link_to 'Contact', contact_path %></li>
+        </ul>
+    </div>
   </div>
-  <div class="header-middle-wrapper">
-  <div class="header-middle">
-    <nav>
-      <ul>
-        <li><%= link_to "Programs & Pricing", programs_path  %></li>
-        <li><%= link_to "Trainers", trainers_path %></li>
-        <li><%= link_to "Schedule", start_path %></li>
-        <li><%= link_to "Workouts", wod_path %></li>
-        <li><%= link_to "Contact", contact_path %></li>
-      </ul>
-    </nav>
-  </div>
-</div>
-<div class="header-right">
-  <ul>
-    <li><a href="http://journal.crossfit.com/start.tpl" target="_blank"><img src="/assets/cfitjournal.png" alt="Crossfit Journal"></a></li>
-    <li><a href="http://www.facebook.com/crossfit704" target="_blank"><img src="/assets/704-facebook.png" alt="facebook"></a></li>
-    <li><a href="http://www.youtube.com/crossfit704" target="_blank"><img src="/assets/704-youtube.png" alt="youtube"></a></li>
-  </ul>
-</div>
-</div>
-</header>
