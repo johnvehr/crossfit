@@ -1,7 +1,7 @@
 @import 'bootstrap';
 
 body {
-  padding-top:45px;
+  padding-top:42px;
 }
 .navbar {
   background:#FFF;
@@ -176,18 +176,27 @@ body {
 .programs-background {
   margin:0 auto;
   width:900px;
-  height:1800px;
+  height:1920px;
   padding-top:50px;
 }
 
 .info {
   background:rgba(105,195,255,1);
 }
+.blue {
+  color:rgba(105,195,255,1);
+}
+.member-blue {
+  font-size:20px;
+}
 
 .session-one {
   padding-left:180px;
 }.session-two {
   padding-left:187px;
+}
+td span {
+  color:rgba(105,195,255,1);
 }
 
 
