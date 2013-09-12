@@ -1,7 +1,10 @@
   <div class="navbar navbar-fixed-top">
     <div class="container">
         <%= link_to image_tag('/assets/logo-black-small.png'), root_path, class: 'logo' %>
- 
+        <ul style="margin-bottom:0;padding-top:5px;">
+          <li><a href="http://instagram.com/crossfit704" target="_blank"><img src="/assets/insta.png" alt=""></a></li>
+          <li><a href="http://facebook.com/crossfit704" target="_blank"><img src="/assets/face.png" alt=""></a></li>
+        </ul>
         <ul class="nav pull-right">
           <li><%= link_to 'Programs & Pricing', programs_path %></li>
           <li><%= link_to 'Trainers', trainers_path %></li>
